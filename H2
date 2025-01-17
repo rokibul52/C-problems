@@ -1,10 +1,14 @@
 #include<stdio.h>
 int main(){
-    char ch ='C';
-    char str[]="Language";
+    char ch;
+    char s[1];
+    char sen[100];
+    scanf("%c\n",&ch);
     printf("%c\n",ch);
-    printf("%s\n",str);
-    printf("Welcome To C!!");
+    scanf("%s\n",s);
+    printf("%s\n",s);
+   fgets(sen, sizeof(sen), stdin);
+    printf("%s",sen);
     return 0;
     
 }
